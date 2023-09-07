@@ -1,0 +1,33 @@
+Category
+-
+Category_id string PK
+Category string
+
+Subcategory
+-
+Subcategory_id string PK
+Subcategory string
+
+Contacts
+-
+Contact_id int PK
+First_name string
+Last_name string
+Email string
+
+Campaign
+-
+CF_id int
+Contact_id int FK - Contacts.Contact_id
+Company_name string
+Description string
+Goal int
+Pledged int
+Outcome string
+Backers_count int
+Country string
+Currency string
+Launched_date date
+End_date date
+Category_id string FK >- Category.Category_id
+Subcategory_id string FK >- Subcategory.Subcategory_id
